@@ -1,0 +1,82 @@
+body {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #333333;
+    direction: ltr;
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+    font-size: 11px;
+    line-height: 1.28;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    unicode-bidi: embed;
+}
+
+.btn1{
+	background-color:#F3F3F3;
+	cursor:pointer;
+	display:inline;
+	font-weight:bold;
+	padding:2px 5px;
+	border:1px solid gray;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    border-radius: 2px;	
+}
+#dialodAddPromotion{
+	display:none;
+}
+
+#rightpanel .rp_welcome{
+	padding:10px;
+	text-align:right;
+
+}
+#rightpanel .rp_resto{
+	padding:10px;
+
+}
+#rightpanel .rp_restoname{
+	font-size:20px;
+	font-weight:bold;
+}
+
+#rightpanel .rp_promotion{
+	margin-top:15px;
+}
+
+#dialogAddPromotion{
+	display:none;
+}
+#dialogAddPromotion label {display:block;margin-top:4px;  }
+#dialogAddPromotion .text { display:block;width:96%;display:block; }
+#dialogAddPromotion textarea { display:block;width:96%;height:100px; }
+
+.detailPromo{
+	margin:4px 0px;
+}
+.detailPromo_title{
+	font-weight:bold;
+}
+.detailPromo_date{
+	font-style:italic;
+}
+.detailPromo_url{
+	font-style:italic;
+}
+
+#menuAbout:hover,#menuHelp:hover,#menuDisclaimer:hover,#menuContactUs:hover,#menuFAQ:hover{
+	text-decoration:underline;
+}
+
+#menuAbout,#menuHelp,#menuDisclaimer,#menuContactUs,#menuFAQ:{
+	cursor:pointer;
+}
+#dialogAbout,#dialogHelp,#dialogDisclaimer,#dialogContactUs,#dialogFAQ{
+	display:none;
+}
+
+#dialogHelp label,#dialogFAQ label{
+	display:block;
+	font-weight:bold;
+}
