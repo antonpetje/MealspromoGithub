@@ -45,6 +45,9 @@ body {
 	margin-top:15px;
 }
 
+#rightpanel .rp_social{
+	text-align:right;
+}
 #dialogAddPromotion{
 	display:none;
 }
@@ -69,7 +72,7 @@ body {
 	text-decoration:underline;
 }
 
-#menuAbout,#menuHelp,#menuDisclaimer,#menuContactUs,#menuFAQ:{
+#menuAbout,#menuHelp,#menuDisclaimer,#menuContactUs,#menuFAQ{
 	cursor:pointer;
 }
 #dialogAbout,#dialogHelp,#dialogDisclaimer,#dialogContactUs,#dialogFAQ{

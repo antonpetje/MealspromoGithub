@@ -34,6 +34,8 @@ if(isset($_POST['Latlng']) && isset($_POST['gid']) && isset($_POST['ref']) &&  $
 			$phone=$line['resto_phone'];
 			$longitude=$line['resto_longitude'];
 			$latitude=$line['resto_latitude'];
+			$website=$line['resto_website'];
+			$url=$line['resto_googleplus'];
 		}
 	}else{
 		//echo "new restaurant";
@@ -86,11 +88,19 @@ if(isset($_POST['Latlng']) && isset($_POST['gid']) && isset($_POST['ref']) &&  $
 		}
 	}
 	echo "<div class='rp_restoname'>".$name."</div>";
+	if($url!=""){
+		echo "<div class='rp_social'>";
+			echo '<div class="g-plusone" data-size="small" data-annotation="none" data-href="'.$url.'"></div>';
+		echo "</div>";
+	}
 	if($address!=""){
 		echo  "<div class='rp_restoaddress'>Address: ".$address."</div>";
 	}
 	if($phone!=""){
 		echo  "<div class='rp_restophone'>Phone: ".$phone."</div>";
+	}
+	if($website!=""){
+		echo  "<div class='rp_website'>Website: ".$website."</div>";
 	}
 	?>
 	<div class="rp_promotion">
@@ -205,3 +215,10 @@ if(isset($_POST['Latlng']) && isset($_POST['gid']) && isset($_POST['ref']) &&  $
 ?>
 
 
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>

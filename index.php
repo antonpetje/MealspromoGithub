@@ -139,14 +139,14 @@ setcookie("vstmealspromofirst", "1", $expire);
     <div id="map" style="width:70%; height:100%"></div>
 	<div id="rightpanel" style="width:29%; height:100%">
 		<div class="rp_welcome">
-			<span id="menuAbout">About Us</span>
+			<!-- <span id="menuAbout">About Us</span> -->
 			<span id="menuHelp">Help</span>
 			<span id="menuFAQ">FAQ</span>
 			<span id="menuDisclaimer">Disclaimer</span>
 			<span id="menuContactUs">Contact Us</span>
 		</div>		
 		<div class="rp_resto">
-		
+			Click the restaurant marker to see what inside!!
 		</div>
 	</div>	
 	<div id="dialogAddPromotion">
@@ -163,18 +163,23 @@ setcookie("vstmealspromofirst", "1", $expire);
 		<textarea name="description" rows="" cols="" id="promo_description"></textarea>		 
 	</div>
 
-	<div id="dialogAbout"></div>
+	<!-- <div id="dialogAbout"></div> -->
 	<div id="dialogHelp">
-		Welcome to mealspromo.com,
-		<label>How to use:</label>
-		Make sure you enable the location feature on your browser.<br/>
-		Click restaurant marker around your location to see the restaurant promotion<br/>
-		Drag and Drop your location marker to see another restaurant around your marker.
-		
+		Welcome to mealspromo.com,<br/><br/>
+		<label>How this website work</label>
+		<p>
+		This website will show restaurants around your marker (red marker).<br> First marker position will be base on your current location if you enable your geolocation service in your browser if not we will use our default location.</p>
+		<p>
+		Just drag and drop the red marker to send another restaurant in other places. 
+		Click Restaurant marker to see information about the restaurnat and promotion in that restaurant.
+		If you know any promotion for that restaurant you can submit the infomration by click the button on the button bellow the restaurant information.
+		</p>
+		<br/>
+		Note: we never keep and save your location information.		
 	</div>
 	<div id="dialogDisclaimer">
 		<p>
-		All information posted by user. 
+		All promotion information posted by user. 
 		Mealspromo.com not responsible for any messages posted by user.
 		</p>
 		<p>
@@ -182,10 +187,20 @@ setcookie("vstmealspromofirst", "1", $expire);
 		</p>
 	</div>
 	<div id="dialogContactUs">
+		Have any question regarding this website please contact us: 
 		<a href="mailto:mealspromo@gmail.com">mailto:mealspromo@gmail.com</a>
 	</div>
 	<div id="dialogFAQ">
-		
+		<ul>
+			<li><label>Why not all restaurants appear?</label>
+				We generate the restaurans from google, so we only showing restaurants if google have it.
+			<li><label>How to enable geolocation in my website?</label>
+				if you using Chrome please click <a href="http://support.google.com/chrome/bin/answer.py?hl=en&answer=142065" target="_blank">here</a><br/>
+				if you using Firefox please click <a href="http://www.mozilla.org/en-US/firefox/geolocation/" target="_blank">here</a><br/>
+				if you using Internet Explorer please click <a href="http://msdn.microsoft.com/en-us/library/ie/gg589513%28v=vs.85%29.aspx" target="_blank">here</a><br/>
+				if you using Opera please click <a href="http://help.opera.com/Mac/10.60/en/geolocation.html" target="_blank">here</a><br/>
+				if you using Safari please click <a href="http://support.apple.com/kb/HT4239" target="_blank">here</a><br/>
+		</ul>
 	</div>
   </body>
   <script>
