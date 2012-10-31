@@ -10,7 +10,10 @@ body {
     text-align: left;
     unicode-bidi: embed;
 }
-
+a{
+	color:#3366CC;
+	text-decoration:none;
+}
 .btn1{
 	background-color:#F3F3F3;
 	cursor:pointer;
@@ -59,13 +62,14 @@ body {
 	margin:4px 0px;
 }
 .detailPromo_title{
-	font-weight:bold;
+	font-weight:bold;	
 }
 .detailPromo_date{
 	font-style:italic;
+	padding-bottom:4px;
 }
-.detailPromo_url{
-	font-style:italic;
+.detailPromo_url{	
+	padding-top:4px;
 }
 
 #menuAbout:hover,#menuHelp:hover,#menuDisclaimer:hover,#menuContactUs:hover,#menuFAQ:hover{

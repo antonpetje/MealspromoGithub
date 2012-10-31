@@ -8,6 +8,8 @@ if(isset($_POST['promoStart']) && isset($_POST['promoDesc']) && isset($_POST['re
 	$promoEnd=$_POST['promoEnd'];
 	$promoDesc=$_POST['promoDesc'];
 	$promoUrl=$_POST['promoUrl'];
+	$promoUrl = $promoUrl;
+	$promoUrl = preg_replace('#^https?://#', '', $promoUrl);
 	if($promoEnd==""){
 		$promoEnd=$promoStart;
 	}

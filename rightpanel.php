@@ -100,7 +100,9 @@ if(isset($_POST['Latlng']) && isset($_POST['gid']) && isset($_POST['ref']) &&  $
 		echo  "<div class='rp_restophone'>Phone: ".$phone."</div>";
 	}
 	if($website!=""){
-		echo  "<div class='rp_website'>Website: ".$website."</div>";
+		$website2 = $website;
+		$website2 = preg_replace('#^https?://#', '', $website2);
+		echo  "<div class='rp_website'>Website: <a href='".$website."' target='blank'>".$website2."</a></div>";
 	}
 	?>
 	<div class="rp_promotion">
@@ -120,7 +122,7 @@ if(isset($_POST['Latlng']) && isset($_POST['gid']) && isset($_POST['ref']) &&  $
 	if($promotion==0){
 		echo "Seems no promotion in this restaurant, <div class='btn1 addpromotionhome' restoID='".$resto_id."'>click here</div> if you know.";
 	}else{
-		echo "We found promotion(s)/deals in this restaurant";
+		echo "We found promotion(s)/deals in this restaurant:<br/>";
 		foreach($promo as $p){
 				$title=$p['title'];
 				$startDate=$p['start'];
@@ -143,7 +145,7 @@ if(isset($_POST['Latlng']) && isset($_POST['gid']) && isset($_POST['ref']) &&  $
 					echo "<div class='detailPromo_description'>".$description."</div>";
 				}
 				if($url!=""){
-					echo "<div class='detailPromo_url'><a href='http://".$url."'>".$url."</a></div>";
+					echo "<div class='detailPromo_url'><a href='http://".$url."' target='blank'>".$url."</a></div>";
 				}
 			echo "</div>";
 		
